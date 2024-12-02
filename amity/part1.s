@@ -116,7 +116,7 @@ main:
 	# sum_str[digits] = '\n'
 	mov byte ptr [rsp + rax + 64], '\n'
 
-	# print(sum_str, digits + 1;
+	# print(sum_str, digits) + 1;
 	lea rdi, [rsp + 64]
 	mov esi, eax
 	inc esi
