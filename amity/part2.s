@@ -113,7 +113,7 @@ main:
 	jmp __main_loop_outer
 
 	__main_loop_outer_done:
-# char sum_str[32]; // [rsp + 64]
+	# char sum_str[32]; // [rsp + 64]
 	# int digits = uint_to_string(sum, sum_str)
 	mov rdi, rax
 	lea rsi, [rsp + 64]
