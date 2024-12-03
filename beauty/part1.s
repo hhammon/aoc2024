@@ -121,15 +121,15 @@ main:
 
 	__main_loop_done:
 	# char safe_reports_str[32]; // [rsp + 64]
-	# int digits = uint_to_string(sum, safe_reports_str)
+	# int digits = uint_to_string(safe_reports, safe_reports_str)
 	mov rdi, rax
 	lea rsi, [rsp + 64]
 	call uint_to_string
 
-	# sum_str[digits] = '\n'
+	# safe_reports_str[digits] = '\n'
 	mov byte ptr [rsp + rax + 64], '\n'
 
-	# print(sum_str, digits + 1);
+	# print(safe_reports_str, digits + 1);
 	lea rdi, [rsp + 64]
 	mov esi, eax
 	inc esi
