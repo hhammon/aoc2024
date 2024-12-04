@@ -180,7 +180,7 @@ main:
 	mov byte ptr [rsp + 15], al
 
 	xor eax, eax
-break:
+
 	cmp dword ptr [rsp + 12], 0x4d53534d # "MSSM"
 	sete al
 	add qword ptr [rsp + 32], rax
