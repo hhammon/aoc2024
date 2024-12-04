@@ -1,10 +1,6 @@
 .global _start
 .intel_syntax noprefix
 
-.section .rodata
-search_word:
-	.asciz "XMAS"
-
 .section .text
 
 _start:
