@@ -13,16 +13,16 @@ ld -o bin/part2 part2.o list-equations.o utils.o
 
 rm *.o
 
-# echo "Day 6 (Family)"
+echo "Day 6 (Family)"
 
-# echo "Running Part 1 on sample input."
-# ./bin/part1 input/sample.txt
+echo "Running Part 1 on sample input."
+./bin/part1 input/sample.txt
 
-# echo "Running Part 1 on puzzle input."
-# ./bin/part1 input/input.txt
+echo "Running Part 1 on puzzle input."
+./bin/part1 input/input.txt
 
-# echo "Running Part 2 on sample input."
-# ./bin/part2 input/sample.txt
+echo "Running Part 2 on sample input."
+./bin/part2 input/sample.txt
 
-# echo "Running Part 2 on puzzle input."
-# ./bin/part2 input/input.txt
+echo "Running Part 2 on puzzle input."
+./bin/part2 input/input.txt
