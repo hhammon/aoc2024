@@ -13,7 +13,7 @@ ld -o bin/part2 part2.o list-equations.o utils.o
 
 rm *.o
 
-echo "Day 6 (Family)"
+echo "Day 8 (Hope)"
 
 echo "Running Part 1 on sample input."
 ./bin/part1 input/sample.txt
