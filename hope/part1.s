@@ -77,19 +77,10 @@ main:
 
 	mov qword ptr [rsp + 48], rax
 
-	# FOR TESTING
-	# mem_copy(antinodes.data, map.data, len)
-	mov rdi, qword ptr [rsp + 48]
-	mov rsi, qword ptr [rsp + 32]
-	mov rdx, qword ptr [rsp + 8]
-	call mem_copy
-
 	# find_antinodes(&map, &antinodes);
 	lea rdi, [rsp + 32]
 	lea rsi, [rsp + 48]
 	call find_antinodes
-
-break:
 
 	# int antinode_count = grid_count(&antinodes, '#');
 	lea rdi, [rsp + 48]
